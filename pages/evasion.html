@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Evan Daniel - Homepage</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Link BootStrap into the page-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--Link in my own CSS file-->
+    <link rel="stylesheet" href="../styles/style_index.css">
+
+    <style>
+        /*Import Google Fonts Cabin and Bowlby One CS*/
+        @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
+    </style>
+</head>
+
+
+<body>
+
+    <!--Navbar at the top of the page w/ links to the other pages-->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+
+      <div class="container-fluid">
+
+          <img src="../assets/Logo.png" style="height: 47px; padding-right: 10px">
+
+          <!--Adding this will allow the navbar to be collapsed on smaller viewports-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!--These classes and id's also is needed for collapsibility-->
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+              <ul class="navbar-nav">
+                  <li class="nav-item" style="font-family: Gilan;">
+                      <a class="nav-link" id="curPageLink" href="../index.html">Home</a>
+                  </li>
+
+                  <li class="nav-item dropdown" style="font-family: Gilan;">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Projects
+                    </a>
+                    <ul class="dropdown-menu" style="font-family: Gilan;">
+                      <li style="font-family: Gilan;"><a class="dropdown-item" href="../pages/explore.html">Explore</a></li>
+                      <li style="font-family: Gilan;"><a class="dropdown-item" href="../pages/petey.html">Petey's Pizza Panic</a></li>
+                      <li style="font-family: Gilan;"><a class="dropdown-item" href="../pages/cereal.html">CerealBoxd</a></li>
+                      <li style="font-family: Gilan;"><a class="dropdown-item" href="../pages/pairadice.html">Pair-A-Dice</a></li>
+                      <li style="font-family: Gilan;"><a class="dropdown-item" href="../pages/tuberun.html">Tube Runner</a></li>
+                      <li style="font-family: Gilan;"><a class="dropdown-item" href="../pages/evasion.html">Evasion</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item" style="font-family: Gilan;">
+                      <a class="nav-link" href="workexp.html">Work Experience</a>
+                  </li>
+              </ul>
+
+          </div>
+      </div>
+  </nav>
+    <div class="backDots">
+      <div class="row">
+        <div class="col-lg-7">
+          <p class="projTitle">Evasion Launchapad</p>
+          <div>
+            <p class="subTitle">Overview</p>
+              <p class="projText">This channel is an ongoing project which I have been running since early 2017. On here I perform covers and remixes of some of my favorite songs on a Launchpad midi device. Accompanied by these performances are lightshows which are developed with various Max for Live plugins. Several videos feature collabortation with other launcpad artists, who I highly suggest you check out as well.</p>
+          </div>
+          <div>
+            <p class="subTitle">What I Do</p>
+              <div class="row projRoles">
+                <div class="col-lg-6" style="padding-right: 0px; padding-left: 0%;">
+                  <div>
+                    <ul class="rolesBox">
+                      <li>Cover, edit, and remix tracks within ableton live</li>
+                      <li>Program light displays with the use of Max</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-6" style="padding-left: 0px; padding-right: 0%;">
+                  <ul>
+                    <li>Perform covers on Novation's launchpad</li>
+                    <li>Edit and apply effects to videos</li>
+                    <li>Design thumbnails and branding for the youtube channel</li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+          <div>
+            <p class="subTitle">Tech Stack</p>
+              <div class="row projRoles">
+                <div class="col-lg-1 stackWidth">
+                  <a href="https://www.ableton.com/en/live/what-is-live/" target="_blank" class="outsideLink link_extra">
+                    <img src="../assets/ableton.png" class="demoIcon" class="img-fluid" id="imgLink">
+                  </a>
+                </div>
+                <div class="col-lg-1 stackWidth">
+                  <a href="https://cycling74.com/products/max" target="_blank" class="outsideLink link_extra">
+                    <img src="../assets/max.png" class="demoIcon" class="img-fluid" id="imgLink">
+                  </a>
+                </div>
+                <div class="col-lg-1 stackWidth">
+                  <a href="https://www.adobe.com/products/photoshop.html" target="_blank" class="outsideLink link_extra">
+                    <img src="../assets/photoshop.png" class="demoIcon" class="img-fluid" id="imgLink">
+                  </a>
+                </div>
+                <div class="col-lg-1 stackWidth">
+                  <a href="https://www.adobe.com/products/premiere.html" target="_blank" class="outsideLink link_extra">
+                    <img src="../assets/premiere.png" class="demoIcon" class="img-fluid" id="imgLink">
+                  </a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="d-flex justify-content-center" style="margin-top: 23.5%">
+            <iframe width="700" height="400" src="https://www.youtube.com/embed/cHEQhC_v3pk">
+            </iframe>
+          </div>
+          <div class="demo">
+            <p class="demoText">See the channel:</p>
+
+              <div class="row demoLink">
+                <div class="col-lg-1 demoWidth">
+                  <figure>
+                    <a href="https://www.youtube.com/channel/UCkcibsST2UohazhGwM5pRbA" target="_blank" class="outsideLink link_extra">
+                      <img src="../assets/Logo.png" class="demoIcon" class="img-fluid" id="imgLink">
+                    </a>
+                  </figure>
+                </div>
+              </div>
+          </div>
+        </div>
+    </div>
+    <br><br><br>
+</body>
+</html>

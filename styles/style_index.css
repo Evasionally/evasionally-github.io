@@ -1,0 +1,432 @@
+
+@font-face {
+    font-family: Edmund;
+    src: url(Edmund-Free.ttf);
+}
+
+@font-face {
+  font-family: Gilan;
+  src: url(Gilgan.otf);
+}
+
+.backDots {
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.2) 8%, 
+    transparent 8%
+  );
+  background-position: 0% 0%;
+  background-size: 5vmin 5vmin;
+  height: 100%;
+  width:100%;
+}
+
+/*"Meet Andy Gelfo" in the body*/
+#mainHeading
+{
+    font-family: "Edmund";
+    font-size: 300%;
+    color: #e6e6e6;
+}
+
+/*"Andy Gelfo" on the Navbar*/
+#logoNavLink
+{
+    font-family: "Edmund";
+    font-size: 200%;
+}
+
+/*For all links, apply a smooth hover color transition*/
+a
+{
+    transition: all 0.2s ease-in-out 0s;
+}
+
+#centerHeading
+{
+    font-family: "Edmund";
+    font-size: 240%;
+    text-align: center;
+    color: #c9c9c9;
+    padding:10px;
+    margin-bottom: 0px;
+}
+
+#centerText
+{
+    font-family: "Gilan";
+    font-size: 140%;
+    text-align: center;
+    color: #c9c9c9;
+}
+
+.leftRightIcon
+{
+    width: 50%;
+    margin: auto;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 60%;
+}
+
+.leftRightTitle
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.row
+{
+    justify-content: center;
+}
+
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }
+
+#imgLink
+{
+    transition: transform .2s; /* Animation */
+}
+
+#imgLink:hover
+{
+    transform: scale(1.1);
+}
+
+:root {
+    --blue-rgb: 92 192 249;
+    --green-rgb: 125 161 35;
+    --brown-rgb: 127 46 23;
+  }
+  
+  html, body {
+    background-color: rgb(26, 26, 26);
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+  }
+  
+  #cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .card {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    transition: scale 100ms;
+    background-color: transparent;
+  }
+  
+  .card .card-front-image {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .card .card-image {
+    width: clamp(300px, 20vw, 500px);
+    aspect-ratio: 1;
+    border-radius: clamp(0.5rem, 0.75vw, 2rem);
+    background-color: transparent;
+  }
+  
+  .card-faders {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 1500ms;
+    pointer-events: none;
+  }
+  
+  .card:hover .card-faders {
+    opacity: 1;
+  }
+  
+  .card:active {
+    scale: 0.98;
+  }
+  
+  .card-fader {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  }
+  
+  .card-fader:nth-child(odd) {
+    animation: fade-left 3s linear infinite;
+  }
+  
+  .card-fader:nth-child(even) {
+    animation: fade-right 3s linear infinite;
+  }
+  
+  .card-fader:is(:nth-child(3), :nth-child(4)) {
+    animation-delay: 750ms;
+  }
+  
+  .card-fader:is(:nth-child(5), :nth-child(6)) {
+    animation-delay: 1500ms;
+  }
+  
+  .card-fader:is(:nth-child(7), :nth-child(8)) {
+    animation-delay: 2250ms;
+  }
+  
+  @media(max-width: 1200px) {
+    body {    
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+    
+    #cards {
+      flex-direction: column; 
+      align-items: center;
+      gap: 4rem;
+      padding: 4rem;
+    }
+    
+    .card .card-image {
+      width: 400px;    
+    }
+  }
+  
+  @media(max-width: 600px) {
+    #cards {
+      gap: 2rem;
+      padding: 2rem;
+    }
+    
+    .card {
+      width: 80%;    
+    }
+    
+    .card .card-image {
+      width: 100%;    
+    }
+  }
+  
+  @keyframes fade-left {
+    from {
+      scale: 1;
+      translate: 0%;
+      opacity: 1;
+    }
+    
+    to {
+      scale: 0.8;
+      translate: -30%;
+      opacity: 0;
+    }
+  }
+  
+  @keyframes fade-right {
+    from {
+      scale: 1;
+      translate: 0%;
+      opacity: 1;
+    }
+    
+    to {
+      scale: 0.8;
+      translate: 30%;
+      opacity: 0;
+    }
+  }
+
+
+/* Project Page Styles */
+.projTitle{
+  font-family: "Edmund";
+  font-size: 500%;
+  text-align: left;
+  color: #e6e6e6;
+  padding:10px;
+  padding-bottom: 0px;
+  margin-left: 2.9%;
+  margin-top: 0.7%;
+  margin-bottom: 0.3%;
+  height: 13%;
+}
+
+.subTitle{
+  font-family: "Edmund";
+  font-size: 250%;
+  text-align: left;
+  color: #e6e6e6;
+  padding-left: 10px;
+  margin-left: 2.9%;
+  margin-bottom: 0.5%;
+}
+
+.projText{
+  font-family: "Gilan";
+  font-size: 150%;
+  text-align: left;
+  color: #e6e6e6;
+  padding-left: 10px;
+  margin-left: 5.3%;
+  margin-bottom: 2%;
+  background-color: #1111114b;
+  box-shadow: 0 0 5px 12px #1111114b;
+}
+
+.projRoles{
+  font-family: "Gilan";
+  font-size: 150%;
+  text-align: left;
+  color: #e6e6e6;
+  margin-left: 5.3%;
+  margin-bottom: 2%;
+  margin-right: 0.0px;
+  background-color: #1111114b;
+  box-shadow: 0 0 5px 12px #1111114b;
+}
+
+.rolesBox{
+  align-items: left;
+  justify-content: start;
+}
+
+.stackIcon{
+  width: 80px;
+}
+
+.stackWidth{
+  padding:0%;
+  margin-right: 2%; 
+  margin-left: 2%;
+}
+
+.demoText{
+  font-family: "Edmund";
+  font-size: 250%;
+  text-align: center;
+  color: #e6e6e6;
+}
+
+.demo{
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-top: 5%;
+  background-color: #1111114b;
+  box-shadow: 0 0 5px 12px #1111114b;
+}
+
+.demoLink{
+  font-family: "Gilan";
+  font-size: 150%;
+  text-align: left;
+  color: #e6e6e6;
+  margin-bottom: 2%;
+  margin-right: 0.0px;
+}
+
+.demoIcon{
+  width: 90px
+}
+
+.demoWidth{
+  width: 90px;
+  padding:0%;
+  margin-right: 2%; 
+  margin-left: 2%;
+  margin-bottom: 2%;
+}
+
+.protoLink{
+  font-family: "Gilan";
+  font-size: 150%;
+  text-align: left;
+  color: #e6e6e6;
+  margin-bottom: 2%;
+  margin-right: 0.0px;
+}
+
+.protoIcon{
+  width: 150px
+}
+
+.protoWidth{
+  width: 150px;
+  padding:0%;
+  margin-right: 2%; 
+  margin-left: 2%;
+  margin-bottom: 2%;
+}
+
+.proto{
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-top: 17%;
+  background-color: #1111114b;
+  box-shadow: 0 0 5px 12px #1111114b;
+}
+
+.cerealIcon{
+  width: 80px
+}
+
+.cerealWidth{
+  width: 80px;
+  padding:0%;
+  margin-right: 7%; 
+  margin-left: 7%;
+  margin-bottom: 2%;
+}
+
+.cereal{
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-top: 17%;
+  background-color: #1111114b;
+  box-shadow: 0 0 5px 12px #1111114b;
+}
+
+.cerealLink{
+  font-family: "Gilan";
+  font-size: 150%;
+  text-align: left;
+  color: #e6e6e6;
+  margin-bottom: 2%;
+  margin-right: 0.0px;
+  
+}
+
+.cerealText{
+  font-family: "Edmund";
+  font-size: 250%;
+  text-align: center;
+  color: #e6e6e6;
+  margin-bottom: 0%;
+}
+/*Dropdown Code*/
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown>.dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+
+.dropdown-menu{
+  --bs-dropdown-bg: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
+  --bs-dropdown-link-color: rgba(255, 255, 255, 0.55);
+}

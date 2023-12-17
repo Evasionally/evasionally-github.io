@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Evan Daniel - Homepage</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Link BootStrap into the page-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--Link in my own CSS file-->
+    <link rel="stylesheet" href="../styles/style_index.css">
+
+    <style>
+        /*Import Google Fonts Cabin and Bowlby One CS*/
+        @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
+    </style>
+</head>
+
+
+<body>
+
+    <!--Navbar at the top of the page w/ links to the other pages-->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+
+      <div class="container-fluid">
+
+          <img src="../assets/Logo.png" style="height: 47px; padding-right: 10px">
+
+          <!--Adding this will allow the navbar to be collapsed on smaller viewports-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!--These classes and id's also is needed for collapsibility-->
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+              <ul class="navbar-nav">
+                  <li class="nav-item" style="font-family: Gilan;">
+                      <a class="nav-link" id="curPageLink" href="../index.html">Home</a>
+                  </li>
+
+                  <li class="nav-item dropdown" style="font-family: Gilan;">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Projects
+                    </a>
+                    <ul class="dropdown-menu" style="font-family: Gilan;">
+                      <li style="font-family: Gilan;"><a class="dropdown-item" href="../pages/explore.html">Explore</a></li>
+                      <li style="font-family: Gilan;"><a class="dropdown-item" href="../pages/petey.html">Petey's Pizza Panic</a></li>
+                      <li style="font-family: Gilan;"><a class="dropdown-item" href="../pages/cereal.html">CerealBoxd</a></li>
+                      <li style="font-family: Gilan;"><a class="dropdown-item" href="../pages/pairadice.html">Pair-A-Dice</a></li>
+                      <li style="font-family: Gilan;"><a class="dropdown-item" href="../pages/tuberun.html">Tube Runner</a></li>
+                      <li style="font-family: Gilan;"><a class="dropdown-item" href="../pages/evasion.html">Evasion</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item" style="font-family: Gilan;">
+                      <a class="nav-link" href="workexp.html">Work Experience</a>
+                  </li>
+              </ul>
+
+          </div>
+      </div>
+  </nav>
+    <div class="backDots">
+      <div class="row">
+        <div class="col-lg-7">
+          <p class="projTitle">Petey's Pizza Panic</p>
+          <div>
+            <p class="subTitle">Overview</p>
+              <p class="projText">Petey's Pizza Panic is a simple puzzle platforming game developed within the Unity engine for windows devices. The game follows our main character Petey, a slice of pizza, as he attempts to change his fate and escape the pizzeria. Equipped with a cheese grapple and pepperoni shooter gained from his genetic mutations sustained within the baking process, he must face off against opposing mutated toppings to seal his esacpe.</p>
+          </div>
+          <div>
+            <p class="subTitle">My Role</p>
+              <div class="row projRoles">
+                <div class="col-lg-6" style="padding-right: 0px; padding-left: 0%;">
+                  <div>
+                    <ul class="rolesBox">
+                      <li>Created physics-based character controller</li>
+                      <li>Developed grapple ability</li>
+                      <li>Prototyped and designed level 3</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-6" style="padding-left: 0px; padding-right: 0%;">
+                  <ul>
+                    <li>Rigged character models</li>
+                    <li>Animated character models</li>
+                    <li>Designed main and pause menu user intefaces</li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+          <div>
+            <p class="subTitle">Tech Stack</p>
+              <div class="row projRoles">
+                <div class="col-lg-1 stackWidth">
+                  <a href="https://unity.com/" target="_blank" class="outsideLink link_extra">
+                    <img src="../assets/unity.png" class="demoIcon" class="img-fluid" id="imgLink">
+                  </a>
+                </div>
+                <div class="col-lg-1 stackWidth">
+                  <a href="https://www.blender.org/" target="_blank" class="outsideLink link_extra">
+                    <img src="../assets/blender.png" class="demoIcon" class="img-fluid" id="imgLink">
+                  </a>
+                </div>
+                <div class="col-lg-1 stackWidth">
+                  <a href="https://learn.microsoft.com/en-us/dotnet/csharp/" target="_blank" class="outsideLink link_extra">
+                    <img src="../assets/csharp.png" class="demoIcon" class="img-fluid" id="imgLink">
+                  </a>
+                </div>
+                <div class="col-lg-1 stackWidth">
+                  <a href="https://www.adobe.com/products/photoshop.html" target="_blank" class="outsideLink link_extra">
+                    <img src="../assets/photoshop.png" class="demoIcon" class="img-fluid" id="imgLink">
+                  </a>
+                </div>
+                <div class="col-lg-1 stackWidth">
+                  <a href="https://www.adobe.com/products/premiere.html" target="_blank" class="outsideLink link_extra">
+                    <img src="../assets/premiere.png" class="demoIcon" class="img-fluid" id="imgLink">
+                  </a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="d-flex justify-content-center" style="margin-top: 25.5%">
+            <iframe width="700" height="400" src="https://www.youtube.com/embed/OfybBvKgysU">
+            </iframe>
+          </div>
+          <div class="demo">
+            <p class="demoText">Play the demo:</p>
+
+              <div class="row demoLink">
+                <div class="col-lg-1 demoWidth">
+                  <figure>
+                    <a href="https://github.com/Evasionally/Peteys-Pizza-Panic" target="_blank" class="outsideLink link_extra">
+                      <img src="../assets/github-sign.png" class="demoIcon" class="img-fluid" id="imgLink">
+                    </a>
+                  </figure>
+                </div>
+              </div>
+          </div>
+          <br><br>
+        </div>
+    </div>
+</body>
+</html>
