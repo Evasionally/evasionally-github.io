@@ -111,7 +111,7 @@ a:active { text-decoration: none; }
   
   html, body {
     background-color: rgb(26, 26, 26);
-    overflow-y: hidden; /* Hide vertical scrollbar */
+
     overflow-x: hidden; /* Hide horizontal scrollbar */
   }
   
